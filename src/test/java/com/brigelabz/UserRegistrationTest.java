@@ -96,14 +96,14 @@ public class UserRegistrationTest {
     //password test cases
     @Test
     public void givenPassword_WhenValid_ThenReturnTrue() {
-        String password = "NileshLad";
+        String password = "NILESHLAD";
         boolean  password1 = Preregistration.isValidPassword(password);
         Assert.assertTrue(password1);
     }
 
     @Test
     public void givenPassword_WhenInValid_ThenReturnFalse() {
-        String password = "Nilesh";
+        String password = "nilesh";
         boolean  password1 = Preregistration.isValidPassword(password);
         Assert.assertFalse(password1);
     }

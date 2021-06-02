@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.brigelabz.UserRegistrationTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2021-06-02T11:54:10" hostname="LAPTOP-DILI6N8Q" time="0.007">
+<testsuite name="com.brigelabz.UserRegistrationTest" tests="14" skipped="0" failures="0" errors="0" timestamp="2021-06-02T12:15:26" hostname="LAPTOP-DILI6N8Q" time="0.019">
   <properties/>
-  <testcase name="givenLastName_whenValid_thenReturnFalse" classname="com.brigelabz.UserRegistrationTest" time="0.001"/>
-  <testcase name="givenFirstName_whenValid_thenReturnTrue" classname="com.brigelabz.UserRegistrationTest" time="0.0"/>
-  <testcase name="givenLastName_whenInvalidFirstLetterUpperCase_thenReturnFalse" classname="com.brigelabz.UserRegistrationTest" time="0.0"/>
+  <testcase name="givenLastName_whenValid_thenReturnFalse" classname="com.brigelabz.UserRegistrationTest" time="0.002"/>
+  <testcase name="givenPhoneNumber_WhenValid_ThenReturn" classname="com.brigelabz.UserRegistrationTest" time="0.001"/>
+  <testcase name="givenFirstName_whenValid_thenReturnTrue" classname="com.brigelabz.UserRegistrationTest" time="0.001"/>
+  <testcase name="givenLastName_whenInvalidFirstLetterUpperCase_thenReturnFalse" classname="com.brigelabz.UserRegistrationTest" time="0.001"/>
+  <testcase name="givenEmail_WhenValid_ThenReturnTrue" classname="com.brigelabz.UserRegistrationTest" time="0.001"/>
   <testcase name="givenFirstName_whenValid_thenReturnFalse" classname="com.brigelabz.UserRegistrationTest" time="0.0"/>
-  <testcase name="givenLastName_whenValid_thenReturnTrue" classname="com.brigelabz.UserRegistrationTest" time="0.002"/>
-  <testcase name="givenLastName_whenInvalidLastLetterUpperCase_thenReturnFalse" classname="com.brigelabz.UserRegistrationTest" time="0.0"/>
+  <testcase name="givenEmailName_whenInvalid_thenReturnFalse" classname="com.brigelabz.UserRegistrationTest" time="0.001"/>
+  <testcase name="givenPassword_WhenInValid_ThenReturnFalse" classname="com.brigelabz.UserRegistrationTest" time="0.0"/>
+  <testcase name="givenPhoneNumber_WhenInValid_ThenReturnFalse" classname="com.brigelabz.UserRegistrationTest" time="0.001"/>
+  <testcase name="givenLastName_whenValid_thenReturnTrue" classname="com.brigelabz.UserRegistrationTest" time="0.001"/>
+  <testcase name="givenLastName_whenInvalidLastLetterUpperCase_thenReturnFalse" classname="com.brigelabz.UserRegistrationTest" time="0.001"/>
+  <testcase name="givenPhoneNumber_WhenValid_ThenReturnTrue" classname="com.brigelabz.UserRegistrationTest" time="0.001"/>
+  <testcase name="givenPassword_WhenValid_ThenReturnTrue" classname="com.brigelabz.UserRegistrationTest" time="0.001"/>
+  <testcase name="givenPhoneNumberIncomplete_WhenInValid_ThenReturnFalse" classname="com.brigelabz.UserRegistrationTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
