@@ -6,6 +6,8 @@ public class UserRegistration {
     //DECLARE PATTER
     private String FIRST_NAME_PATTERN = "^[A-Z][a-z]{2,}$";
     private String LAST_NAME_PATTERN = "^[A-Z][a-z]{2,}$";
+    private String EMAIL_PATTERN = "^[0-9A-Za-z]+([-_+.][0-9A-Za-z]+)?[@][a-zA-Z0-9]+[.][a-zA-Z]{2,4}([.][a-zA-Z]{2,4})?$";
+
 
     //first name method
     public boolean validateFirstName(String name){
@@ -16,5 +18,11 @@ public class UserRegistration {
     public boolean validateLastName(String name) {
         return (Pattern.matches(LAST_NAME_PATTERN , name));
     }
+
+    //email method
+    public boolean isValidEmail(String email) {
+        return Pattern.matches(EMAIL_PATTERN , email);
+    }
+
 
 }

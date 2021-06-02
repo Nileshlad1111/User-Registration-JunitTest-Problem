@@ -49,5 +49,18 @@ public class UserRegistrationTest {
         boolean lastName = Preregistration.validateLastName(name);
         Assert.assertFalse(lastName);
     }
+    //test cases email
+    @Test
+    public void givenEmail_WhenValid_ThenReturnTrue() {
+        String email = "ladnilesh1994@gmail.com";
+        boolean emailID = Preregistration.isValidEmail(email);
+        Assert.assertTrue(emailID);
+    }
 
+    @Test
+    public void givenEmailName_whenInvalid_thenReturnFalse() {
+        String email = "ladnilesh1994@gmail";
+        boolean emailID = Preregistration.isValidEmail(email);
+        Assert.assertFalse(emailID);
+    }
 }
