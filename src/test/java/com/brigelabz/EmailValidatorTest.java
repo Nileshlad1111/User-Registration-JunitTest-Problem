@@ -13,7 +13,7 @@ import java.util.Collection;
 public class EmailValidatorTest {
     String email;
     boolean expectedResult;
-   // private UserValidator userValidator;
+
     private UserRegistration userRegistration;
 
     public EmailValidatorTest(String email, boolean expectedResult) {
@@ -22,13 +22,14 @@ public class EmailValidatorTest {
     }
 
     @Before
-    public void initialize() {
+    public void initialize(){
         userRegistration = new UserRegistration();
     }
 
     @Parameterized.Parameters
     public static Collection email_With_ExpectedResult() {
         return Arrays.asList(new Object[][] {
+                {"ladnilesh1994@gmail.com" , true},
                 { "abc@yahoo.com", true },
                 { "abc-100@yahoo.com", true },
                 { "abc.100@yahoo.com", true },
@@ -45,12 +46,12 @@ public class EmailValidatorTest {
                 { "abc123@.com.com", false },
                 { ".abc@abc.com", false },
                 { "abc()*@gmail.com", false },
-                { "abc@%*.com", false },
+                { "abc@%*.com" , false },
                 { "abc..2002@gmail.com", false },
-                { "abc.@gmail.com", false },
-                { "abc@abc@gmail.com", false },
-                { "abc@gmail.com.1a", false },
-                { "abc@gmail.com.aa.au", false }
+                { "abc.@gmail.com" , false },
+                { "abc@abc@gmail.com" , false },
+                { "abc@gmail.com.1a" , false },
+                { "abc@gmail.com.aa.au" , false }
         });
     }
 
