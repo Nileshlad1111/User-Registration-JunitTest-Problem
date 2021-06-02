@@ -1,0 +1,2 @@
+com/brigelabz/UserRegistrationTest.java
+ com.brigelabz.UserRegistrationTest
