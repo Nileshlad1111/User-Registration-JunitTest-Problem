@@ -36,4 +36,14 @@ public class UserRegistration {
         return (Pattern.matches(PASSWORD_PATTERN , password));
     }
 
+    //to check mood method(happy and sad)
+    public String moodAnalyse(String firstName, String lastName, String phoneNumber, String email, String password ) {
+        if(validateFirstName(firstName) == true && validateLastName(lastName) == true && isValidEmail(email) == true && isValidPhonemes(phoneNumber) == true && isValidPassword(password) == true){
+            return "HAPPY";
+        }
+        else {
+            return "SAD";
+        }
+    }
+
 }

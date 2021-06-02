@@ -108,4 +108,17 @@ public class UserRegistrationTest {
         Assert.assertFalse(password1);
     }
 
+    @Test
+    public void mood_Analyser_Test_Happy() {
+        UserRegistration userRegistration = new UserRegistration();
+        String isMoodHappy = userRegistration.moodAnalyse("Nilesh", "Lad", "+91 8888310299", "ladnilesh1111@gmail.com", "1111@nilesh");
+        Assert.assertEquals("HAPPY", isMoodHappy);
+    }
+
+    @Test
+    public void mood_Analyser_Test_Sad() {
+        UserRegistration userRegistration = new UserRegistration();
+        String isMoodSad = userRegistration.moodAnalyse("nana", "lad", "8083373213", "pk.soft@.com", "804426");
+        Assert.assertEquals("SAD", isMoodSad);
+    }
 }
