@@ -28,4 +28,26 @@ public class UserRegistrationTest {
         Assert.assertFalse(firstName);
     }
 
+    //last name test cases
+    @Test
+    public void givenLastName_whenValid_thenReturnTrue() {
+        String name="Lad";
+        boolean lastName = Preregistration.validateLastName(name);
+        Assert.assertTrue(lastName);
+    }
+
+    @Test
+    public void givenLastName_whenValid_thenReturnFalse() {
+        String name="lad";
+        boolean lastName = Preregistration.validateLastName(name);
+        Assert.assertFalse(lastName);
+    }
+
+    @Test
+    public void givenLastName_whenInvalidLastLetterUpperCase_thenReturnFalse() {
+        String name = "LAD";
+        boolean lastName = Preregistration.validateLastName(name);
+        Assert.assertFalse(lastName);
+    }
+
 }

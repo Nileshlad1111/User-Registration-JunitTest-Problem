@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.brigelabz.UserRegistrationTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2021-06-02T11:49:00" hostname="LAPTOP-DILI6N8Q" time="0.002">
+<testsuite name="com.brigelabz.UserRegistrationTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2021-06-02T11:54:10" hostname="LAPTOP-DILI6N8Q" time="0.007">
   <properties/>
-  <testcase name="givenFirstName_whenValid_thenReturnTrue" classname="com.brigelabz.UserRegistrationTest" time="0.001"/>
+  <testcase name="givenLastName_whenValid_thenReturnFalse" classname="com.brigelabz.UserRegistrationTest" time="0.001"/>
+  <testcase name="givenFirstName_whenValid_thenReturnTrue" classname="com.brigelabz.UserRegistrationTest" time="0.0"/>
   <testcase name="givenLastName_whenInvalidFirstLetterUpperCase_thenReturnFalse" classname="com.brigelabz.UserRegistrationTest" time="0.0"/>
   <testcase name="givenFirstName_whenValid_thenReturnFalse" classname="com.brigelabz.UserRegistrationTest" time="0.0"/>
+  <testcase name="givenLastName_whenValid_thenReturnTrue" classname="com.brigelabz.UserRegistrationTest" time="0.002"/>
+  <testcase name="givenLastName_whenInvalidLastLetterUpperCase_thenReturnFalse" classname="com.brigelabz.UserRegistrationTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
