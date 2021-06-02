@@ -92,4 +92,19 @@ public class UserRegistrationTest {
         boolean  phoneNumber1 = Preregistration.isValidPhonemes(phoneNumber);
         Assert.assertFalse(phoneNumber1);
     }
+
+    //password test cases
+    @Test
+    public void givenPassword_WhenValid_ThenReturnTrue() {
+        String password = "NileshLad";
+        boolean  password1 = Preregistration.isValidPassword(password);
+        Assert.assertTrue(password1);
+    }
+
+    @Test
+    public void givenPassword_WhenInValid_ThenReturnFalse() {
+        String password = "Nilesh";
+        boolean  password1 = Preregistration.isValidPassword(password);
+        Assert.assertFalse(password1);
+    }
 }
