@@ -1,2 +1,5 @@
+com/brigelabz/InvalidDetailExceptions.java
+ com.brigelabz.InvalidDetailExceptions
+ com.brigelabz.InvalidDetailExceptions$ExceptionType
 com/brigelabz/UserRegistration.java
  com.brigelabz.UserRegistration
