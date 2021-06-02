@@ -107,4 +107,5 @@ public class UserRegistrationTest {
         boolean  password1 = Preregistration.isValidPassword(password);
         Assert.assertFalse(password1);
     }
+
 }

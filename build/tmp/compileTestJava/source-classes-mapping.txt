@@ -1,2 +1,4 @@
+com/brigelabz/EmailValidatorTest.java
+ com.brigelabz.EmailValidatorTest
 com/brigelabz/UserRegistrationTest.java
  com.brigelabz.UserRegistrationTest

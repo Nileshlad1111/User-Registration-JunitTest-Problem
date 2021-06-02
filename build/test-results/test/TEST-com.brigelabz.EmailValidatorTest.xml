@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.brigelabz.EmailValidatorTest" tests="22" skipped="0" failures="0" errors="0" timestamp="2021-06-02T12:41:16" hostname="LAPTOP-DILI6N8Q" time="0.02">
+  <properties/>
+  <testcase name="testUserEmail[0]" classname="com.brigelabz.EmailValidatorTest" time="0.001"/>
+  <testcase name="testUserEmail[1]" classname="com.brigelabz.EmailValidatorTest" time="0.001"/>
+  <testcase name="testUserEmail[2]" classname="com.brigelabz.EmailValidatorTest" time="0.0"/>
+  <testcase name="testUserEmail[3]" classname="com.brigelabz.EmailValidatorTest" time="0.0"/>
+  <testcase name="testUserEmail[4]" classname="com.brigelabz.EmailValidatorTest" time="0.0"/>
+  <testcase name="testUserEmail[5]" classname="com.brigelabz.EmailValidatorTest" time="0.001"/>
+  <testcase name="testUserEmail[6]" classname="com.brigelabz.EmailValidatorTest" time="0.0"/>
+  <testcase name="testUserEmail[7]" classname="com.brigelabz.EmailValidatorTest" time="0.0"/>
+  <testcase name="testUserEmail[8]" classname="com.brigelabz.EmailValidatorTest" time="0.0"/>
+  <testcase name="testUserEmail[9]" classname="com.brigelabz.EmailValidatorTest" time="0.001"/>
+  <testcase name="testUserEmail[10]" classname="com.brigelabz.EmailValidatorTest" time="0.0"/>
+  <testcase name="testUserEmail[11]" classname="com.brigelabz.EmailValidatorTest" time="0.0"/>
+  <testcase name="testUserEmail[12]" classname="com.brigelabz.EmailValidatorTest" time="0.0"/>
+  <testcase name="testUserEmail[13]" classname="com.brigelabz.EmailValidatorTest" time="0.001"/>
+  <testcase name="testUserEmail[14]" classname="com.brigelabz.EmailValidatorTest" time="0.0"/>
+  <testcase name="testUserEmail[15]" classname="com.brigelabz.EmailValidatorTest" time="0.002"/>
+  <testcase name="testUserEmail[16]" classname="com.brigelabz.EmailValidatorTest" time="0.001"/>
+  <testcase name="testUserEmail[17]" classname="com.brigelabz.EmailValidatorTest" time="0.001"/>
+  <testcase name="testUserEmail[18]" classname="com.brigelabz.EmailValidatorTest" time="0.0"/>
+  <testcase name="testUserEmail[19]" classname="com.brigelabz.EmailValidatorTest" time="0.001"/>
+  <testcase name="testUserEmail[20]" classname="com.brigelabz.EmailValidatorTest" time="0.001"/>
+  <testcase name="testUserEmail[21]" classname="com.brigelabz.EmailValidatorTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
