@@ -32,7 +32,7 @@ public class UserRegistrationTest {
     }
 
     @Test
-    public void testFirstName_WhenPassNullValue_shouldNullValueException() {
+    public void givenTestFirstName_WhenPassNullValue_shouldNullValueException() {
         String isFNameValid = null;
         try {
             userRegistration.validateFirstName(null);
@@ -44,7 +44,7 @@ public class UserRegistrationTest {
 
     //last name test cases
     @Test
-    public void testLastName_WhenValueIsValid_ShouldReturnSuccess() {
+    public void givenTestLastName_WhenValueIsValid_ShouldReturnSuccess() {
         String islNameValid = null;
         try {
             islNameValid = userRegistration.validateLastName("Lad");
@@ -55,7 +55,7 @@ public class UserRegistrationTest {
     }
 
     @Test
-    public void testLastName_WhenValueIsInvalid_ShouldThrowInvalidException(){
+    public void givenTestLastName_WhenValueIsInvalid_ShouldThrowInvalidException(){
         try {
             userRegistration.validateLastName("Lad");
         }
@@ -65,7 +65,7 @@ public class UserRegistrationTest {
     }
 
     @Test
-    public void testLastName_WhenValueIsNull_ShouldThrowNullPointerException(){
+    public void givenTestLastName_WhenValueIsNull_ShouldThrowNullPointerException(){
         try {
             userRegistration.validateLastName(null);
         }
@@ -76,7 +76,7 @@ public class UserRegistrationTest {
 
     //test cases email
     @Test
-    public void testEmailId_WhenValueIsValid_ShouldReturnSuccess(){
+    public void givenTestEmailId_WhenValueIsValid_ShouldReturnSuccess(){
         String isEmailValid = null;
         try {
             isEmailValid = userRegistration.validateEmailId("ladnilesh1994@gmail.com");
@@ -88,7 +88,7 @@ public class UserRegistrationTest {
     }
 
     @Test
-    public void testEmailId_WhenValueIsInvalid_ShouldThrowInvalidDetailException() {
+    public void givenTestEmailId_WhenValueIsInvalid_ShouldThrowInvalidDetailException() {
         try {
             userRegistration.validateEmailId("pk.@.com");
         }
@@ -98,7 +98,7 @@ public class UserRegistrationTest {
     }
 
     @Test
-    public void testEmailId_WhenValueIsNull_ShouldThrowNullPointerException() {
+    public void givenTestEmailId_WhenValueIsNull_ShouldThrowNullPointerException() {
         try {
             userRegistration.validateEmailId(null);
         }
@@ -109,7 +109,7 @@ public class UserRegistrationTest {
 
     //test case mobile number
     @Test
-    public void testMobileNum_WhenValueIsValid_ShouldReturnSuccess() {
+    public void givenTestMobileNum_WhenValueIsValid_ShouldReturnSuccess() {
         String isPhoneValid = null;
         try {
             isPhoneValid = userRegistration.validatePhoneNumber("91 8888310299");
@@ -120,7 +120,7 @@ public class UserRegistrationTest {
     }
 
     @Test
-    public void testMobileNum_WhenValueIsInvalid_ShouldInvalidDetailException() {
+    public void givenTestMobileNum_WhenValueIsInvalid_ShouldInvalidDetailException() {
         try {
             userRegistration.validatePhoneNumber("808337");
         }
@@ -130,7 +130,7 @@ public class UserRegistrationTest {
     }
 
     @Test
-    public void testMobileNum_WhenPassedNullValue_ShouldThrowNullPointerException() {
+    public void givenTestMobileNum_WhenPassedNullValue_ShouldThrowNullPointerException() {
         try {
             userRegistration.validatePhoneNumber(null);
         }
@@ -140,7 +140,7 @@ public class UserRegistrationTest {
     }
     //password test cases
     @Test
-    public void testPassword_WhenNotSatisfy_AttlistOneNumberOneUppercase_OneSpecialLetterRule_ShouldThrowInvalidPassException() {
+    public void givenTestPassword_WhenNotSatisfy_AttlistOneNumberOneUppercase_OneSpecialLetterRule_ShouldThrowInvalidPassException() {
         try {
             userRegistration.validatePassword("abc");
         }
@@ -151,7 +151,7 @@ public class UserRegistrationTest {
 
 
     @Test
-    public void testPassword_WhenPassedNullValue_ShouldThrowNullPointerException() {
+    public void givenTestPassword_WhenPassedNullValue_ShouldThrowNullPointerException() {
         try {
             userRegistration.validatePassword(null);
         }
