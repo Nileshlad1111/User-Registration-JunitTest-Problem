@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class UserRegistrationTest {
+    //object
     UserRegistration userRegistration = new UserRegistration();
 
     //first name test cases
@@ -21,7 +22,6 @@ public class UserRegistrationTest {
 
     @Test
     public void givenFirstName_WhenValueIsInvalid_shouldReturnException() {
-        UserRegistration userRegistration = new UserRegistration();
         String isFNameValid = null;
         try {
             userRegistration.validateFirstName("nilesh");
@@ -33,7 +33,6 @@ public class UserRegistrationTest {
 
     @Test
     public void testFirstName_WhenPassNullValue_shouldNullValueException() {
-        UserRegistration userRegistration = new UserRegistration();
         String isFNameValid = null;
         try {
             userRegistration.validateFirstName(null);
@@ -46,7 +45,6 @@ public class UserRegistrationTest {
     //last name test cases
     @Test
     public void testLastName_WhenValueIsValid_ShouldReturnSuccess() {
-        UserRegistration userRegistration = new UserRegistration();
         String islNameValid = null;
         try {
             islNameValid = userRegistration.validateLastName("Lad");
@@ -58,7 +56,6 @@ public class UserRegistrationTest {
 
     @Test
     public void testLastName_WhenValueIsInvalid_ShouldThrowInvalidException(){
-        UserRegistration userRegistration = new UserRegistration();
         try {
             userRegistration.validateLastName("Lad");
         }
@@ -69,7 +66,6 @@ public class UserRegistrationTest {
 
     @Test
     public void testLastName_WhenValueIsNull_ShouldThrowNullPointerException(){
-        UserRegistration userRegistration = new UserRegistration();
         try {
             userRegistration.validateLastName(null);
         }
@@ -81,7 +77,6 @@ public class UserRegistrationTest {
     //test cases email
     @Test
     public void testEmailId_WhenValueIsValid_ShouldReturnSuccess(){
-        UserRegistration userRegistration = new UserRegistration();
         String isEmailValid = null;
         try {
             isEmailValid = userRegistration.validateEmailId("ladnilesh1994@gmail.com");
@@ -94,7 +89,6 @@ public class UserRegistrationTest {
 
     @Test
     public void testEmailId_WhenValueIsInvalid_ShouldThrowInvalidDetailException() {
-        UserRegistration userRegistration = new UserRegistration();
         try {
             userRegistration.validateEmailId("pk.@.com");
         }
@@ -105,7 +99,6 @@ public class UserRegistrationTest {
 
     @Test
     public void testEmailId_WhenValueIsNull_ShouldThrowNullPointerException() {
-        UserRegistration userRegistration = new UserRegistration();
         try {
             userRegistration.validateEmailId(null);
         }
@@ -117,7 +110,6 @@ public class UserRegistrationTest {
     //test case mobile number
     @Test
     public void testMobileNum_WhenValueIsValid_ShouldReturnSuccess() {
-        UserRegistration userRegistration = new UserRegistration();
         String isPhoneValid = null;
         try {
             isPhoneValid = userRegistration.validatePhoneNumber("91 8888310299");
@@ -129,7 +121,6 @@ public class UserRegistrationTest {
 
     @Test
     public void testMobileNum_WhenValueIsInvalid_ShouldInvalidDetailException() {
-        UserRegistration userRegistration = new UserRegistration();
         try {
             userRegistration.validatePhoneNumber("808337");
         }
@@ -140,7 +131,6 @@ public class UserRegistrationTest {
 
     @Test
     public void testMobileNum_WhenPassedNullValue_ShouldThrowNullPointerException() {
-        UserRegistration userRegistration = new UserRegistration();
         try {
             userRegistration.validatePhoneNumber(null);
         }
@@ -151,7 +141,6 @@ public class UserRegistrationTest {
     //password test cases
     @Test
     public void testPassword_WhenNotSatisfy_AttlistOneNumberOneUppercase_OneSpecialLetterRule_ShouldThrowInvalidPassException() {
-        UserRegistration userRegistration = new UserRegistration();
         try {
             userRegistration.validatePassword("abc");
         }
@@ -163,7 +152,6 @@ public class UserRegistrationTest {
 
     @Test
     public void testPassword_WhenPassedNullValue_ShouldThrowNullPointerException() {
-        UserRegistration userRegistration = new UserRegistration();
         try {
             userRegistration.validatePassword(null);
         }
@@ -175,7 +163,6 @@ public class UserRegistrationTest {
     //mood test cases
     @Test
     public void mood_Analyser_Test_Happy() {
-        UserRegistration userRegistration = new UserRegistration();
         String isMoodHappy = null;
         try {
             isMoodHappy = userRegistration.moodAnalyse("Nilesh", "Lad", "91 8888310299", "ladnilesh1994@gmail.com", "1111@Pawan");
@@ -188,11 +175,10 @@ public class UserRegistrationTest {
 
     @Test
     public void mood_Analyser_Test_Sad() {
-        UserRegistration userRegistration = new UserRegistration();
-       // String isMoodSad = null;
+       //String isMoodSad = null;
         try {
-            String isMoodHappy = userRegistration.moodAnalyse("Nilesh", "Lad", "+91 8888310299", "ladnilesh1111@gmail.com", "1111@nilesh");
-            Assert.assertEquals("SAD", isMoodHappy);
+            String isMoodSad = userRegistration.moodAnalyse("nilesh", "lad", "8888310299", "ladnilesh%gmail.com", "1111@nilesh");
+            Assert.assertEquals("SAD", isMoodSad);
 
         }
         catch (InvalidDetailExceptions e) {
