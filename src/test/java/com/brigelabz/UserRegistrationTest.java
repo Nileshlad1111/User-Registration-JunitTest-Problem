@@ -9,20 +9,20 @@ public class UserRegistrationTest {
 
     //first name test cases
     @Test
-    public void givenUserFirstName_whenValid_ShouldReturnSuccess() {
-        String isFNameValid = null;
+    public void givenUserFirstName_whenValid_ShouldReturnValid() {
+        String isFirstNameValid = null;
         try {
-            isFNameValid = userRegistration.validateFirstName("Nilesh");
+            isFirstNameValid = userRegistration.validateFirstName("Nilesh");
         }
         catch (InvalidDetailExceptions e){
-            Assert.assertEquals("Valid", isFNameValid);
+            Assert.assertEquals("Valid", isFirstNameValid);
         }
 
     }
 
     @Test
     public void givenFirstName_WhenValueIsInvalid_shouldReturnException() {
-        String isFNameValid = null;
+        String isFirstNameValid = null;
         try {
             userRegistration.validateFirstName("nilesh");
         }
@@ -33,7 +33,7 @@ public class UserRegistrationTest {
 
     @Test
     public void givenTestFirstName_WhenPassNullValue_shouldNullValueException() {
-        String isFNameValid = null;
+        String isFirstNameValid = null;
         try {
             userRegistration.validateFirstName(null);
         }

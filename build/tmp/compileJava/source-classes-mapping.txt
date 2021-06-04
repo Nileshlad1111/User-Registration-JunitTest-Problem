@@ -3,3 +3,5 @@ com/brigelabz/InvalidDetailExceptions.java
  com.brigelabz.InvalidDetailExceptions$ExceptionType
 com/brigelabz/UserRegistration.java
  com.brigelabz.UserRegistration
+com/brigelabz/ValidateUserDetailFunction.java
+ com.brigelabz.ValidateUserDetailFunction

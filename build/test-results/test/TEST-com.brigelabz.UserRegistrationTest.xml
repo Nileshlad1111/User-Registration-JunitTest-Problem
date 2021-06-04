@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.brigelabz.UserRegistrationTest" tests="16" skipped="0" failures="0" errors="0" timestamp="2021-06-03T02:22:33" hostname="LAPTOP-DILI6N8Q" time="0.026">
+<testsuite name="com.brigelabz.UserRegistrationTest" tests="16" skipped="0" failures="0" errors="0" timestamp="2021-06-04T02:59:09" hostname="LAPTOP-DILI6N8Q" time="0.024">
   <properties/>
-  <testcase name="testPassword_WhenNotSatisfy_AttlistOneNumberOneUppercase_OneSpecialLetterRule_ShouldThrowInvalidPassException" classname="com.brigelabz.UserRegistrationTest" time="0.003"/>
-  <testcase name="testEmailId_WhenValueIsValid_ShouldReturnSuccess" classname="com.brigelabz.UserRegistrationTest" time="0.001"/>
-  <testcase name="testMobileNum_WhenValueIsInvalid_ShouldInvalidDetailException" classname="com.brigelabz.UserRegistrationTest" time="0.001"/>
-  <testcase name="testLastName_WhenValueIsNull_ShouldThrowNullPointerException" classname="com.brigelabz.UserRegistrationTest" time="0.0"/>
+  <testcase name="givenTestEmailId_WhenValueIsNull_ShouldThrowNullPointerException" classname="com.brigelabz.UserRegistrationTest" time="0.002"/>
+  <testcase name="givenTestFirstName_WhenPassNullValue_shouldNullValueException" classname="com.brigelabz.UserRegistrationTest" time="0.002"/>
   <testcase name="mood_Analyser_Test_Sad" classname="com.brigelabz.UserRegistrationTest" time="0.001"/>
-  <testcase name="mood_Analyser_Test_Happy" classname="com.brigelabz.UserRegistrationTest" time="0.002"/>
-  <testcase name="testPassword_WhenPassedNullValue_ShouldThrowNullPointerException" classname="com.brigelabz.UserRegistrationTest" time="0.001"/>
-  <testcase name="testFirstName_WhenPassNullValue_shouldNullValueException" classname="com.brigelabz.UserRegistrationTest" time="0.0"/>
+  <testcase name="givenTestMobileNum_WhenValueIsValid_ShouldReturnSuccess" classname="com.brigelabz.UserRegistrationTest" time="0.002"/>
+  <testcase name="mood_Analyser_Test_Happy" classname="com.brigelabz.UserRegistrationTest" time="0.001"/>
+  <testcase name="givenTestMobileNum_WhenPassedNullValue_ShouldThrowNullPointerException" classname="com.brigelabz.UserRegistrationTest" time="0.001"/>
+  <testcase name="givenTestPassword_WhenPassedNullValue_ShouldThrowNullPointerException" classname="com.brigelabz.UserRegistrationTest" time="0.001"/>
+  <testcase name="givenTestLastName_WhenValueIsNull_ShouldThrowNullPointerException" classname="com.brigelabz.UserRegistrationTest" time="0.0"/>
+  <testcase name="givenTestMobileNum_WhenValueIsInvalid_ShouldInvalidDetailException" classname="com.brigelabz.UserRegistrationTest" time="0.001"/>
   <testcase name="givenFirstName_WhenValueIsInvalid_shouldReturnException" classname="com.brigelabz.UserRegistrationTest" time="0.001"/>
-  <testcase name="testEmailId_WhenValueIsInvalid_ShouldThrowInvalidDetailException" classname="com.brigelabz.UserRegistrationTest" time="0.001"/>
-  <testcase name="testLastName_WhenValueIsInvalid_ShouldThrowInvalidException" classname="com.brigelabz.UserRegistrationTest" time="0.001"/>
-  <testcase name="testMobileNum_WhenPassedNullValue_ShouldThrowNullPointerException" classname="com.brigelabz.UserRegistrationTest" time="0.001"/>
+  <testcase name="givenTestEmailId_WhenValueIsInvalid_ShouldThrowInvalidDetailException" classname="com.brigelabz.UserRegistrationTest" time="0.0"/>
   <testcase name="givenUserFirstName_whenValid_ShouldReturnSuccess" classname="com.brigelabz.UserRegistrationTest" time="0.001"/>
-  <testcase name="testLastName_WhenValueIsValid_ShouldReturnSuccess" classname="com.brigelabz.UserRegistrationTest" time="0.001"/>
-  <testcase name="testMobileNum_WhenValueIsValid_ShouldReturnSuccess" classname="com.brigelabz.UserRegistrationTest" time="0.0"/>
-  <testcase name="testEmailId_WhenValueIsNull_ShouldThrowNullPointerException" classname="com.brigelabz.UserRegistrationTest" time="0.002"/>
+  <testcase name="givenTestEmailId_WhenValueIsValid_ShouldReturnSuccess" classname="com.brigelabz.UserRegistrationTest" time="0.0"/>
+  <testcase name="givenTestLastName_WhenValueIsInvalid_ShouldThrowInvalidException" classname="com.brigelabz.UserRegistrationTest" time="0.0"/>
+  <testcase name="givenTestPassword_WhenNotSatisfy_AttlistOneNumberOneUppercase_OneSpecialLetterRule_ShouldThrowInvalidPassException" classname="com.brigelabz.UserRegistrationTest" time="0.0"/>
+  <testcase name="givenTestLastName_WhenValueIsValid_ShouldReturnSuccess" classname="com.brigelabz.UserRegistrationTest" time="0.002"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
